@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <title>Kalatog Alat Fotografi</title>
-  <!-- Tailwind diambil berdasarkan referensi yang diberikan Bang Mikail-->
+  <!--Tailwind diambil berdasarkan referensi yang diberikan Bang Mikail-->
+  <!--Tailwind saya pilih karena saya lebih paham menggunakan tailwind css dibandinkan menggunakan css style -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
   </script>
+  <!--Menentukan Font Georgia untuk Tampilan-->
+  <!--Saya sengaja menetapkan satu font favorit saya karena saya ingin tampilan terlihat rapi-->
+  <style>body{font-family: Georgia};</style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -14,8 +18,10 @@
   <!--header + nav-->
   <header>
     <!--flex kolom diutamakan untuk device handphone terlebih dahulu-->
-    <nav class="flex flex-col gap-2 md:flex-row md:justify-between md:items-center px-6 py-4 bg-green-800 text-white">
-      <a href="#" class="text-xl font-bold">Katalog Alat Fotografi</a>
+    <!--Sengaja mengutamakan tampilan smartphone karena lebih susah dibandingkan tampilan lain-->
+    <!--Warna Biru dipilih karena cocok untuk tema fotografi dimana dibutuhkan ketenangan ygy-->
+    <nav class="flex flex-col gap-2 md:flex-row md:justify-between md:items-center px-6 py-4 bg-sky-500 text-white">
+      <a href="#" class="text-xl font-bold">COYY SUKA FOTO</a>
       <div class="flex gap-4">
         <a href="#menu" class="hover:underline">Menu</a>
         <a href="#kontak" class="hover:underline">Kontak</a>
@@ -24,11 +30,12 @@
   </header>
 
   <!--Penyesuaian isi agar tidak melebar keluar batasan-->
+  <!--Penetapan ini penting untuk kerapian dan estetika-->
   <main class="max-w-5xl mx-auto px-6 py-10">
     <section class="mb-10">
-      <h1 class="text-3xl font-bold text-green-900">Katalog Alat Fotografi</h1>
+      <h1 class="text-3xl font-bold text-sky-900">Katalog Alat Fotografi</h1>
       <p class="mt-2 text-gray-600">
-        Toko ini menyediakan beragam koleksi dan perlengkapan fotografi premium dari berbagai merek ternama yang disusun rapi layaknya katalog hidup untuk memenuhi segala kebutuhan visual Anda
+        Coyy Suka Foto menyediakan beragam koleksi dan perlengkapan fotografi premium dari berbagai merek ternama yang disusun rapi layaknya katalog hidup untuk memenuhi segala kebutuhan visual Anda
       </p>
     </section>
     
@@ -38,63 +45,74 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         
         <!--Merangkai Kartu Daftar dan Isinya-->
+        <!--Disini saya membuat data nama alat fotografi, tipe alat fotografi, ketersediaan, dan harga sesuai dengan data yang sudah dibuat sebelumnya-->
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Sony Alpha a7 IV</h3>
           <p class="text-sm text-gray-500">Kamera</p>
+          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
           <p class="mt-2 font-bold text-green-800">Rp350.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Fujifilm X-T5</h3>
           <p class="text-sm text-gray-500">Kamera</p>
+          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
           <p class="mt-2 font-bold text-green-800">Rp300.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Canon EOS 90D</h3>
           <p class="text-sm text-gray-500">Kamera</p>
+          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
           <p class="mt-2 font-bold text-green-800">Rp200.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Lensa Sigma 24-70mm f/2.8</h3>
           <p class="text-sm text-gray-500">Lensa</p>
+          <p class="mt-1 w-fit rounded-full bg-rose-100 px-2.5 py.0.5 text-xs font-medium text-rose-700">Sedang Disewa</p>
           <p class="mt-2 font-bold text-green-800">Rp150.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Lensa Sony 50mm f/1.8</h3>
           <p class="text-sm text-gray-500">Kamera</p>
+          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
           <p class="mt-2 font-bold text-green-800">Rp80.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Godox SL60W LED Video Light</h3>
           <p class="text-sm text-gray-500">Lighting</p>
+          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
           <p class="mt-2 font-bold text-green-800">Rp110.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Aputure Amaran 200d</h3>
           <p class="text-sm text-gray-500">Kamera</p>
+          <p class="mt-1 w-fit rounded-full bg-rose-100 px-2.5 py.0.5 text-xs font-medium text-rose-700">Sedang Disewa</p>
           <p class="mt-2 font-bold text-green-800">Rp175.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">DJI Ronin SC Gimbal</h3>
           <p class="text-sm text-gray-500">Stabilizer</p>
+          <p class="mt-1 w-fit rounded-full bg-rose-100 px-2.5 py.0.5 text-xs font-medium text-rose-700">Sedang Disewa</p>
           <p class="mt-2 font-bold text-green-800">Rp120.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Rode Wireless GO II</h3>
           <p class="text-sm text-gray-500">Audio</p>
+          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
           <p class="mt-2 font-bold text-green-800">Rp90.000</p> 
         </article>
 
         <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
           <h3 class="text-lg font-semibold">Tripod Benro KH25N</h3>
           <p class="text-sm text-gray-500">Tripod</p>
+          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
           <p class="mt-2 font-bold text-green-800">Rp60.000</p> 
         </article>
       </div>
