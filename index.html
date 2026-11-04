@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>Kalatog Alat Fotografi</title>
+  <title>Katalog Alat Fotografi</title>
   <!--Tailwind diambil berdasarkan referensi yang diberikan Bang Mikail-->
   <!--Tailwind saya pilih karena saya lebih paham menggunakan tailwind css dibandinkan menggunakan css style -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
   </script>
   <!--Menentukan Font Georgia untuk Tampilan-->
   <!--Saya sengaja menetapkan satu font favorit saya karena saya ingin tampilan terlihat rapi-->
-  <style>body{font-family: Georgia};</style>
+  <style>body{font-family: Georgia}</style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -23,6 +23,7 @@
     <nav class="flex flex-col gap-2 md:flex-row md:justify-between md:items-center px-6 py-4 bg-sky-500 text-white">
       <a href="#" class="text-xl font-bold">COYY SUKA FOTO</a>
       <div class="flex gap-4">
+        <!--Ketika diklik, maka kita hanya akan berpindah ke Halaman dibawah Header-->
         <a href="#menu" class="hover:underline">Menu</a>
         <a href="#kontak" class="hover:underline">Kontak</a>
       </div>
@@ -41,81 +42,19 @@
     
     <section id="menu">
       <h2 class="text-2xl font-bold mb-4">Daftar Perlengkapan Fotografi</h2>
-      <!--Menyusun Grid rapi dan rata untuk seluruh Daftar Item-->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        
-        <!--Merangkai Kartu Daftar dan Isinya-->
-        <!--Disini saya membuat data nama alat fotografi, tipe alat fotografi, ketersediaan, dan harga sesuai dengan data yang sudah dibuat sebelumnya-->
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Sony Alpha a7 IV</h3>
-          <p class="text-sm text-gray-500">Kamera</p>
-          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
-          <p class="mt-2 font-bold text-green-800">Rp350.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Fujifilm X-T5</h3>
-          <p class="text-sm text-gray-500">Kamera</p>
-          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
-          <p class="mt-2 font-bold text-green-800">Rp300.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Canon EOS 90D</h3>
-          <p class="text-sm text-gray-500">Kamera</p>
-          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
-          <p class="mt-2 font-bold text-green-800">Rp200.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Lensa Sigma 24-70mm f/2.8</h3>
-          <p class="text-sm text-gray-500">Lensa</p>
-          <p class="mt-1 w-fit rounded-full bg-rose-100 px-2.5 py.0.5 text-xs font-medium text-rose-700">Sedang Disewa</p>
-          <p class="mt-2 font-bold text-green-800">Rp150.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Lensa Sony 50mm f/1.8</h3>
-          <p class="text-sm text-gray-500">Kamera</p>
-          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
-          <p class="mt-2 font-bold text-green-800">Rp80.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Godox SL60W LED Video Light</h3>
-          <p class="text-sm text-gray-500">Lighting</p>
-          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
-          <p class="mt-2 font-bold text-green-800">Rp110.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Aputure Amaran 200d</h3>
-          <p class="text-sm text-gray-500">Kamera</p>
-          <p class="mt-1 w-fit rounded-full bg-rose-100 px-2.5 py.0.5 text-xs font-medium text-rose-700">Sedang Disewa</p>
-          <p class="mt-2 font-bold text-green-800">Rp175.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">DJI Ronin SC Gimbal</h3>
-          <p class="text-sm text-gray-500">Stabilizer</p>
-          <p class="mt-1 w-fit rounded-full bg-rose-100 px-2.5 py.0.5 text-xs font-medium text-rose-700">Sedang Disewa</p>
-          <p class="mt-2 font-bold text-green-800">Rp120.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Rode Wireless GO II</h3>
-          <p class="text-sm text-gray-500">Audio</p>
-          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
-          <p class="mt-2 font-bold text-green-800">Rp90.000</p> 
-        </article>
-
-        <article class="flex flex-col gap-1 p-5 bg-white border border-gray-200 rounded-lg">
-          <h3 class="text-lg font-semibold">Tripod Benro KH25N</h3>
-          <p class="text-sm text-gray-500">Tripod</p>
-          <p class="mt-1 w-fit rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Tersedia</p>
-          <p class="mt-2 font-bold text-green-800">Rp60.000</p> 
-        </article>
+      <!--Menghapus seluruh Kartu Item, karena kita akan mengintegrasikan langsung dengan Data Item-->
+      <!--Sekarang kita membuat kolom tombol untuk mem-filter pilihan Item dari Daftar Item-->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button id="tombol-semua" class="px-4 py-2 rounded-lg bg-sky-500 text-white">Semua</button>
+        <button id="tombol-kamera" class="px-4 py-2 rounded-lg bg-sky-500 text-white">Kamera</button>
+        <button id="tombol-lensa" class="px-4 py-2 rounded-lg bg-sky-500 text-white">Lensa</button>
+        <button id="tombol-lighting" class="px-4 py-2 rounded-lg bg-sky-500 text-white">Lighting</button>
+        <button id="tombol-stabilizer" class="px-4 py-2 rounded-lg bg-sky-500 text-white">Stabilizer</button>
+        <button id="tombol-audio" class="px-4 py-2 rounded-lg bg-sky-500 text-white">Audio</button>
+        <button id="tombol-tripod" class="px-4 py-2 rounded-lg bg-sky-500 text-white">Tripod</button>
+      <!--Seluruh tombol filter ini akan terhubung nanti dengan Data Item(data.js) dan Tampilan yang sudah terintegrasi (tampilan.js)-->
       </div>
+      <div id="daftar-kartu" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </section>
   </main>
 
@@ -123,5 +62,10 @@
     <p>Jl. Puncak 2, Limau Manis, Kec. Pauh, Kota Padang, Sumatera Barat 25166</p>
     <p>Buka setiap hari pukul 07.30 sampai 16.00</p>
   </footer>
+
+  <!--Untuk bisa menjalankan seluruh button filter dan querySelector tidak menghasilkan null-->
+  <!--Maka kita tambahkan kedu script yang tadi kita butuhkan-->
+  <script src="data.js"></script>
+  <script src="tampilan.js"></script>
 </body>
 </html>
