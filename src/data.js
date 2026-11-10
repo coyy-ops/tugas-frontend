@@ -7,7 +7,9 @@
 //   - minimal 2 kategori berbeda, dan minimal 1 item yang bernilai false
 
 // Tema saya: Katalog Alat Fotografi.
-const daftarItem = [
+// Disini awalnya hanya const daftarItem....
+// Kemudian, dilakukan penambahan "export"
+export const daftarItem = [
   { id: 1 , nama: "Sony Alpha a7 IV"           , kategori: "Kamera"    , tarifSewa: 350000, tersedia: true  },
   { id: 2 , nama: "Fujifilm X-T5"              , kategori: "Kamera"    , tarifSewa: 300000, tersedia: true  },
   { id: 3 , nama: "Canon EOS 90D"              , kategori: "Kamera"    , tarifSewa: 200000, tersedia: true  },
