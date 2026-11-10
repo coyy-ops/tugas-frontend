@@ -1,73 +1,61 @@
-# Proyek Frontend — Metro Institute Season 2
+# Katalog Alat Fotografi
 
-Repositori ini adalah **produk kamu sendiri** yang akan terus dikembangkan selama kelas Frontend:
-dari data dan logika, menjadi halaman web, aplikasi React, sampai online di internet.
+Kelas Frontend Web Development
+Metro Institute Season 2
 
----
+## Tentang saya
 
-## Mulai di sini (sekali saja)
+- **Nama:** Ammar Qussoyyi Akmal
+- **GitHub:** [coyy-ops](https://github.com/coyy-ops)
 
-1. Klik tombol hijau **Use this template** → **Create a new repository**.
-2. Beri nama repositori, misalnya `frontend-namakamu`, lalu klik **Create repository**.
-3. Di repositori barumu: **Settings → Collaborators → Add people** → tambahkan **`samythh`** (mentor).
-4. Ambil repositori ke laptop:
+## Tema
+
+**Katalog Alat Fotografi** adalah halaman katalog yang melayani persewaan perlengkapan fotografi dengan nama toko, yaitu **Coyy Suka Foto**. Halaman menampilkan daftar alat yang bisa disewa, mulai dari kamera, lensa, lighting, stabilizer, audio, sampai tripod. Selain itu, halaman juga menampilkan keterangan dari alat-alat fotografi yang ada, seperti tarif sewa dan status ketersediaan alat tersebut.
+
+## Teknologi
+
+- [React](https://react.dev/): membangun tampilan dari komponen
+- [Vite](https://vite.dev/): menjalankan dan membangun proyek
+- [Tailwind CSS](https://tailwindcss.com/): styling, dipasang lewat `@tailwindcss/vite`
+
+## Struktur proyek
+
+```
+src/
+├── main.jsx                  titik masuk, menempelkan App ke halaman
+├── App.jsx                   komponen utama, menyimpan state kategori
+├── data.js                   data alat fotografi (daftarItem)
+├── index.css                 mengimpor Tailwind
+└── components/
+    ├── Navbar.jsx            navigasi bagian atas
+    ├── Kartu.jsx             satu kartu alat fotografi
+    └── TombolFilter.jsx      tombol filter kategori
+```
+
+## Cara menjalankan
+
+Pastikan [Node.js](https://nodejs.org/) sudah terpasang, minimal versi 20.19 atau 22.12. Cek dengan `node -v`.
+
+1. Pasang sekali semua paket:
+
+   ```bash
+   npm.cmd install
+   ```
+
+2. Jalankan server pengembangan:
+
+   ```bash
+   npm.cmd run dev
+   ```
+
+3. Buka alamat yang muncul di terminal, biasanya <http://localhost:5173>.
+
+Untuk menghentikan server, tekan `Ctrl + C` di terminal.
+
+### Membangun untuk produksi (opsional)
 
 ```bash
-git config --global user.name "Nama Lengkap"
-git config --global user.email "email-github@contoh.com"
-
-git clone https://github.com/<username-kamu>/<nama-repo>.git
-cd <nama-repo>
+npm.cmd run build
 ```
 
-> Pastikan yang di-clone adalah **repositori milikmu**, bukan repositori template ini.
-
----
-
-## Cara mengerjakan & mengumpulkan tugas
-
-Setiap tugas dikerjakan di **branch** tersendiri dan dikumpulkan lewat **Pull Request**.
-
-```bash
-# 1. Buat branch untuk tugas
-git checkout -b tugas1a-namakamu
-
-# 2. Kerjakan tugasnya, lalu simpan & kirim
-git add .
-git commit -m "feat: data tema dan fungsi logika"
-git push -u origin tugas1a-namakamu
-```
-
-3. Buka repositorimu di GitHub → klik **Compare & pull request** → judul `Tugas 1A — Nama Kamu` → **Create pull request**.
-
-Kesulitan memakai terminal? Gunakan **GitHub Desktop** sebagai alternatif.
-
----
-
-## Isi repositori
-
-| File | Kegunaan |
-|---|---|
-| `index.html` | Penghubung file JavaScript ke browser. Buka file ini, lalu tekan **F12 → Console** |
-| `data.js` | Data tema produkmu (Tugas 1A) |
-| `logika.js` | Fungsi-fungsi logika (Tugas 1A) |
-| `docs/tugas-1a.md` | Soal dan kriteria penilaian Tugas 1A |
-
----
-
-## Aturan main
-
-- **Kode tugas ditulis sendiri.** Boleh bertanya ke mentor, teman, atau referensi lain untuk memahami konsep.
-- **Siap menjelaskan setiap baris kode.** Mentor akan menanyakan alasan di balik kodemu secara acak.
-- **Langkah dulu, kode belakangan.** Tulis langkah penyelesaian sebagai komentar sebelum menulis kode.
-
-## Kalau macet
-
-Tanyakan di grup dengan format:
-
-```
-1. Yang saya coba   : ...
-2. Yang saya harap  : ...
-3. Yang terjadi     : ... (+ screenshot error)
-4. Yang sudah dicoba: ...
-```
+Hasilnya ada di folder `dist`.
