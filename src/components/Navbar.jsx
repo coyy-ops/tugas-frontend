@@ -12,7 +12,7 @@ function Navbar() {
                 <a href = "#kontak">Kontak</a>
             </div>
         </nav>
-    )
+    );
 }
 
 export default Navbar;
